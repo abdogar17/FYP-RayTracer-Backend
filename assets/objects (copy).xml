@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ItemContainer>
+    <Objects>
+        <Item name="Sphere">
+            <Radius val="0.5"/>
+            <Position x="-4.738615" y="-2.668269" z="8.287485"/>
+            <Scale x="1.0" y="1.0" z="1.0"/>
+            <Rotation x="0" y="0" z="0"/>
+        </Item>
+        <Item name="Sphere">
+            <Radius val="0.5"/>    
+            <Position x="-6.781069" y="-3.496369" z="11.75255"/>
+            <Scale x="1.0" y="1.0" z="1.0"/>
+            <Rotation x="0" y="0" z="0"/>
+        </Item>
+        <Item name="Sphere">
+            <Radius val="0.5"/>
+            <Position x="-4.791027" y="-4.32447" z="8.919906"/>
+            <Scale x="1.0" y="1.0" z="1.0"/>
+            <Rotation x="0" y="0" z="0"/>
+        </Item>
+    </Objects>
+</ItemContainer>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<ItemContainer>
+    <Config>
+        <Width value="800" />
+        <Aspect_ratio value="1.77777" />
+        <Samples_Per_Pixel value="20" />
+        <Max_Depth value="10" />
+    </Config>
+    <Camera>
+        <Viewport_Width value="3.0" />
+        <Focal_Length value="1.0" />
+        <Look_From  x="-2.0" y="2.0" z="1.0" />
+        <Look_at    x="0.0" y="0.0" z="-1.0" />
+        <Up         x="0.0" y="1.0" z="0.0" />
+        <FOV        angle="90" />
+        <!-- <Aspect_ratio value="1.77777" /> -->
+    </Camera>
+    <Lights>
+        <Sun>
+            <Direction x="0.4" y="1.2" z="0.3" />
+            <Intensity value="1.0" />
+            <Color r="0.98828125" g="0.98046875" b="0.82421875" />
+        </Sun>
+    </Lights>
+    <Materials>
+        <Lambertian name="ground">
+            <Color r="0.8" g="0.8" b="0.0" />
+        </Lambertian>
+        <Lambertian name="mattBrown">
+            <Color r="0.7" g="0.3" b="0.3" />
+        </Lambertian>
+        <Metal name="fuzzySilver">
+            <Color r="" g="" b="" />
+            <Fuzz value="" />
+        </Metal>
+        <Metal name="shinyGold">
+            <Color r="" g="" b="" />
+            <Fuzz value="" />
+        </Metal>
+        <Wood name="darkWood">
+            <Color r="" g="" b="" />
+        </Wood>
+    </Materials>
+    <Objects>
+        <Sphere name="ground_sphere">
+            <Radius     value="100.0" />
+            <Position   x="0.0" y="-100.5" z="-1.0" />
+            <Scale      x="1.0" y="1.0" z="1.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="ground" />
+        </Sphere>
+        <Sphere name="middle_sphere">
+            <Radius     value="0.5" />
+            <Position   x="0.0" y="0.0" z="-1.0" />
+            <Scale      x="1.0" y="1.0" z="1.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="mattBrown" />
+        </Sphere>
+        <Sphere name="left_sphere">
+            <Radius     value="0.5" />
+            <Position   x="-1.0" y="0.0" z="-1.0" />
+            <Scale      x="1.0" y="1.0" z="1.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="fuzzySilver" />
+        </Sphere>
+        <Sphere name="right_sphere">
+            <Radius     value="0.5" />
+            <Position   x="1.0" y="0.0" z="-1.0" />
+            <Scale      x="1.0" y="1.0" z="11.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="shinyGold" />
+        </Sphere>
+        <Sphere name="front_sphere">
+            <Radius     value="0.5" />
+            <Position   x="0.0" y="0.0" z="0.0" />
+            <Scale      x="1.0" y="1.0" z="11.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="fuzzySilver" />
+        </Sphere>
+        <Sphere name="back_sphere">
+            <Radius     value="0.5" />
+            <Position   x="0.0" y="0.5" z="-2.5" />
+            <Scale      x="1.0" y="1.0" z="11.0" />
+            <Rotation   x="0" y="0" z="0" />
+            <Material   name="emissive" />
+        </Sphere>
+        <Triangle name="tri01">
+            <V0 x="-1" y="1" z="-3" />
+            <V1 x="1" y="1" z="-3" />
+            <V2 x="0" y="2" z="-3" />
+            <Material   name="mattBrown" />
+        </Triangle>
+        <Mesh name="bed01">
+            <Position   x="-2.5" y="0.0" z="-1.5" />
+            <Scale      x="0.2" y="0.2" z="0.2" />
+            <Rotation   x="0" y="-45" z="0" />
+            <Material   name="shinyGold" />
+            <File       name="bed.obj" />
+        </Mesh>
+        <Mesh name="chair01">
+            <Position   x="0.5" y="0.0" z="-9" />
+            <Scale      x="1.0" y="1.0" z="1.0" />
+            <Rotation   x="0" y="-45" z="0" />
+            <Material   name="fuzzySilver" />
+            <File       name="chair.obj" />
+        </Mesh>
+        <Mesh name="cube01">
+            <Position   x="2.0" y="0.0" z="0.0" />
+            <Scale      x="0.5" y="0.5" z="0.5" />
+            <Rotation   x="90" y="0" z="60" />
+            <Material   name="mattBrown" />
+            <File       name="cube.obj" />
+        </Mesh>
+    </Objects>
+</ItemContainer>
